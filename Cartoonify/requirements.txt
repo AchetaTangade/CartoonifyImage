@@ -1,0 +1,6 @@
+pytesseract
+streamlit
+Pillow==7.0.0
+numpy
+opencv-contrib-python-headless
+matplotlib
