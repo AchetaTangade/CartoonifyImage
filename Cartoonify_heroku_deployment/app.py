@@ -61,8 +61,8 @@ def cartoonization(img):
   line_size=5
 
   blur_value = st.sidebar.slider('Sharpness of image (the lower the value, the sharper it is)', 1, 99, 25, step=2)
-  k = st.sidebar.slider('Tune the color averaging effects (low: only similar colors will be smoothed, high: dissimilar color will be smoothed)', 2, 100,9,step=2)
-  d = st.sidebar.slider('Tune the smoothness level of the image (the higher the value, the smoother the image)', 3, 99, 3, step=2)
+  k = st.sidebar.slider('Color averaging effects', 2, 100,9,step=2)
+  d = st.sidebar.slider('Smoothness level of the image (the higher the value, the smoother the image)', 3, 99, 3, step=2)
 
   edges=edge_mask(img,line_size,blur_value)
   img_quantize=color_quantization(img , k )
